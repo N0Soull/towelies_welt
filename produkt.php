@@ -23,17 +23,17 @@ include 'php/datenbank.php';
                     ?>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="bilder/<?php echo htmlspecialchars($row['BildURL'] ?? 'default.jpg'); ?>" 
-                                 alt="<?php echo htmlspecialchars($row['Name']); ?>">
+                            <img src="bilder/<?php echo strtolower(str_replace(' ', '-', htmlspecialchars($row['Name']))) . '.jpg'; ?>"
+                                alt="<?php echo htmlspecialchars($row['Name']); ?>">
                         </div>
                         <div class="product-content">
                             <h3 class="product-title"><?php echo htmlspecialchars($row['Name']); ?></h3>
                             <span class="product-type"><?php echo htmlspecialchars($row['Typ']); ?></span>
                             <div class="product-price">€<?php echo number_format($row['Preis'], 2, ',', '.'); ?></div>
-                            <div class="product-stock <?php echo $row['Bestand'] > 0 ? 'in-stock' : 'out-of-stock'; ?>">
-                                <?php echo $row['Bestand'] > 0 ? 'Auf Lager: ' . $row['Bestand'] : 'Nicht verfügbar'; ?>
+                            <div class="product-stock <?php echo $row['GesamtBestand'] > 0 ? 'in-stock' : 'out-of-stock'; ?>">
+                                <?php echo $row['Bestand'] > 0 ? 'Auf Lager: ' . $row['GesamtBestand'] : 'Nicht verfügbar'; ?>
                             </div>
-                            <?php if ($row['Bestand'] > 0) : ?>
+                            <?php if ($row['GesamtBestand'] > 0) : ?>
                                 <button class="add-to-cart" onclick="addToCart(<?php echo $row['ProduktID']; ?>)">
                                     In den Warenkorb
                                 </button>

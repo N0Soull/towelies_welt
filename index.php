@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Towelies Welt</h1>
+        <h1>Wilkomen zu Towelies Welt</h1>
         <nav>
             <ul class="nav-left">
                 <li><a href="index.php">Home</a></li>
@@ -22,13 +22,13 @@
     </header>
     <main>
         <section class="hero">
-            <h2>Your one-stop shop for premium products</h2>
-            <p>Explore our wide range of products and enjoy exclusive deals.</p>
-            <a href="produkt.php" class="btn">Shop Now</a>
+            <h2>Wilkomen zu Towelies welt</h2>
+            <p>platzhalter für später idk</p>
+            <a href="produkt.php" class="btn">artikeln anschauen</a>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Towelies Welt. All rights reserved.</p>
+        <p>Towelies Welt.</p>
     </footer>
 </body>
 </html>
