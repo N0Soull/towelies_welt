@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Wilkomen zu Towelies Welt</h1>
+        <h1>Towelies Welt</h1>
         <nav>
             <ul class="nav-left">
                 <li><a href="index.php">Home</a></li>
