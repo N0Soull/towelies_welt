@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Login & Registrierung</title>
-  <link rel="style" href="stylesheet.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -15,19 +15,18 @@
       <span class="close-btn" id="closeLoginBtn">&times;</span>
       <h2>Log in</h2>
       <p>Du hast noch kein Konto? <a href="#" id="toRegister">Registrieren</a></p>
-      <form>
+      <form action="php/EinLogin.php" method="post">
         <label for="loginEmail">Email</label>
-        <input type="email" id="loginEmail" placeholder="eg. example@email.com" required>
+        <input type="email" id="loginEmail" name="loginEmail" placeholder="eg. example@email.com" required>
 
-      <!-- <label for="loginPassword">Passwort</label>
+        <label for="loginPassword">Passwort</label>
         <div class="password-wrapper">
-          <input type="password" id="loginPassword" placeholder="Passwort" required>
-          <span id="toggleLoginPassword"></span>
+          <input type="password" id="loginPassword" name="loginPassword" placeholder="Passwort" required>
+          <span id="toggleLoginPassword">👁️</span>
         </div>
--->
+
         <button type="submit" class="login-button">Log in</button>
       </form>
-      
     </div>
   </div>
 
@@ -67,16 +66,6 @@
           </div>
         </div>
 
-       <!-- <label for="regPass">Passwort</label>
-        <div class="password-wrapper">
-          <input type="password" name="regPass" placeholder="Passwort einrichten" required>
-          <span id="toggleRegisterPassword"></span>
-        </div>
-
-        <p class="password-info">
-          Das Passwort sollte mindestens: 8 Zeichen lang sein, 1 Großbuchstabe, 1 Kleinbuchstabe und 1 Sonderzeichen enthalten.
-        </p>
--->
         <label><input type="checkbox" required> Ich habe gelesen und akzeptiere <a href="#">Datenschutzrichtlinie</a></label>
         <label><input type="checkbox" required> Ich habe gelesen und akzeptiere <a href="#">Geschäftsbedingungen</a></label>
 
@@ -85,6 +74,6 @@
     </div>
   </div>
 
-  <script src="btn.js"></script><A></A>
+  <script src="scripts/btn.js"></script>
 </body>
 </html>
