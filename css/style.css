@@ -44,6 +44,7 @@ header nav ul {
     margin: 0;
     display: flex;
     gap: 1rem;
+<<<<<<< HEAD
 }
 
 .nav-left {
@@ -332,3 +333,6 @@ footer {
     gap: 8px;
   }
   
+=======
+}
+>>>>>>> c674ecd7fdce722b5e6251496b3cd5e9a42b14af
