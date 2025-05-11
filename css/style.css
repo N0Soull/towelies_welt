@@ -324,10 +324,22 @@ footer {
   
   .form-row > div {
     flex: 1;
+    
   }
   
   .tel-wrapper {
     display: flex;
     align-items: center;
     gap: 8px;
+  }
+
+
+  .submit-button{
+    background-color: #00c6aa;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
   }

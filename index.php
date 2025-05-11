@@ -56,7 +56,7 @@
             <h2>Registrieren</h2>
             <p>Hast Du bereits ein Konto? <a href="#" id="toLogin">Log in</a></p>
 
-            <form action="KundenDaten.php" method="post">
+            <form action="EinLogin.php" method="post">
                 <div class="form-row">
                     <div>
                         <label for="vorname">Vorname</label>
@@ -87,7 +87,7 @@
                 <label><input type="checkbox" required> Ich habe gelesen und akzeptiere <a href="#">Datenschutzrichtlinie</a></label>
                 <label><input type="checkbox" required> Ich habe gelesen und akzeptiere <a href="#">Geschäftsbedingungen</a></label>
 
-                <input type="submit" name="Abschicken" value="Abschicken">
+                <input type="submit" name="Abschickennnn" value="Abschicken" class="submit-button">
             </form>
         </div>
     </div>
