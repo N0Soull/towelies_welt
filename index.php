@@ -15,7 +15,7 @@
                 <li><a href="produkt.php">Products</a></li>
             </ul>
             <ul class="nav-right">
-                <li><a href="warenkorb.php">Cart</a></li>
+                <li><a rel= "Warenkorb" href="warenkorb.php">Cart</a></li>
                 <li><a href="#" id="loginBtn">Login</a></li>
             </ul>
         </nav>
