@@ -15,7 +15,7 @@ include 'php/datenbank.php';
         
         <div class="product-grid">
             <?php
-            $query = "SELECT * FROM Produkt";
+            $query = "SELECT * FROM produkt";
             $result = $conn->query($query);
 
             if ($result->num_rows > 0) {
@@ -31,10 +31,10 @@ include 'php/datenbank.php';
                             <span class="product-type"><?php echo htmlspecialchars($row['Typ']); ?></span>
                             <div class="product-price">€<?php echo number_format($row['Preis'], 2, ',', '.'); ?></div>
                             <div class="product-stock <?php echo $row['GesamtBestand'] > 0 ? 'in-stock' : 'out-of-stock'; ?>">
-                                <?php echo $row['Bestand'] > 0 ? 'Auf Lager: ' . $row['GesamtBestand'] : 'Nicht verfügbar'; ?>
+                            <?php echo $row['GesamtBestand'] > 0 ? 'Auf Lager: ' . $row['GesamtBestand'] : 'Nicht verfügbar'; ?>
                             </div>
                             <?php if ($row['GesamtBestand'] > 0) : ?>
-                                <button class="add-to-cart" onclick="addToCart(<?php echo $row['ProduktID']; ?>)">
+                                <button class="add-to-cart" onclick="addToCart(<?php echo $row['Produkt_ID']; ?>)">
                                     In den Warenkorb
                                 </button>
                             <?php endif; ?>

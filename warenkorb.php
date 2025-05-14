@@ -31,7 +31,7 @@
             </div>
         </section>
     </main>
-
+    <br></br>
     <footer>
         <p>&copy; 2025 Towelies Welt. Alle Rechte vorbehalten.</p>
     </footer>
@@ -39,3 +39,4 @@
     <script src="scripts/cart.js"></script>
 </body>
 </html>
+ 
