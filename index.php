@@ -15,8 +15,19 @@
                 <li><a href="produkt.php">Products</a></li>
             </ul>
             <ul class="nav-right">
-                <li><a rel= "Warenkorb" href="warenkorb.php">Cart</a></li>
-                <li><a href="#" id="loginBtn">Login</a></li>
+                <li>
+                <a rel="Warenkorb" href="warenkorb.php">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Cart Icon" width="22" height="22">
+                </a>
+                 </li>
+
+                <li>
+                <a href="#" id="loginBtn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/545/545682.png" alt="Login Icon" width="22" height="22">
+                    
+                </a>
+                 </li>
+
             </ul>
         </nav>
     </header>
@@ -26,6 +37,9 @@
             <p>platzhalter für später idk</p>
             <a href="produkt.php" class="btn">artikeln anschauen</a>
         </section>
+        
+
+
     </main>
 
     <!-- Login Popup -->
