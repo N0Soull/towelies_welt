@@ -1,6 +1,6 @@
 <?php
-	
-	$server= "localhost";	
+
+	$server= "localhost";
 	$user= "root";
 	$pass= "";
 	$db= "towelies_welt";

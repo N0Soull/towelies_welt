@@ -71,10 +71,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateCart();
 }   );
-
-
-
-
-
-
-

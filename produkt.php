@@ -10,6 +10,21 @@ include 'php/datenbank.php';
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <h1>Towelies Welt</h1>
+        <nav>
+            <ul class="nav-left">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="produkt.php">Products</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li><a href="warenkorb.php">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Cart Icon" width="22" height="22">
+                </a></li>
+                <li><a href="#" id="loginBtn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
         <h1 class="page-title">Unsere Produkte</h1>
         
