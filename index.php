@@ -26,7 +26,7 @@
                         <img src="Bilder/Profile.png" alt="Login Icon" width="22" height="22">
                         
                     </a>
-                </li>x
+                </li>
                 </a>
                 </li>
 
