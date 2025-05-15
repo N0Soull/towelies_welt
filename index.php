@@ -19,14 +19,16 @@
                 <a rel="Warenkorb" href="warenkorb.php">
                     <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Cart Icon" width="22" height="22">
                 </a>
-                 </li>
-
+                </li>
                 <li>
-                <a href="#" id="loginBtn">
-                    <img src="https://cdn-icons-png.flaticon.com/512/545/545682.png" alt="Login Icon" width="22" height="22">
-                    
+               <li>
+                    <a href="#" id="loginBtn">
+                        <img src="Bilder/Profile.png" alt="Login Icon" width="22" height="22">
+                        
+                    </a>
+                </li>    
                 </a>
-                 </li>
+                </li>
 
             </ul>
         </nav>
@@ -107,7 +109,7 @@
     </div>
 
     <footer>
-        <p>Towelies Welt.</p>
+        <p>&copy; 2025 Towelies Welt. Alle Rechte vorbehalten.</p>
     </footer>
     
     <script src="scripts/btn.js"></script>
