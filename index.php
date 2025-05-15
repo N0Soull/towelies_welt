@@ -72,7 +72,7 @@
             <h2>Registrieren</h2>
             <p>Hast Du bereits ein Konto? <a href="#" id="toLogin">Log in</a></p>
 
-            <form action="EinLogin.php" method="post">
+            <form action="php/EinLogin.php" method="post">
                 <div class="form-row">
                     <div>
                         <label for="vorname">Vorname</label>
@@ -84,8 +84,10 @@
                     </div>
                 </div>
 
-                <label for="regEmail">Email</label>
-                <input type="email" name="regEmail" placeholder="eg. monicageller@gmail.com" required>
+                <div class="form-group">
+                    <label for="regEmail">Email</label>
+                    <input type="email" name="regEmail" placeholder="eg. monicageller@gmail.com" required>
+                </div>
 
                 <div class="form-row">
                     <div>
@@ -100,10 +102,12 @@
                     </div>
                 </div>
 
-                <label><input type="checkbox" required> Ich habe gelesen und akzeptiere <a href="#">Datenschutzrichtlinie</a></label>
-                <label><input type="checkbox" required> Ich habe gelesen und akzeptiere <a href="#">Geschäftsbedingungen</a></label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" required> Ich habe gelesen und akzeptiere <a href="#">Datenschutzrichtlinie</a></label>
+                    <label><input type="checkbox" required> Ich habe gelesen und akzeptiere <a href="#">Geschäftsbedingungen</a></label>
+                </div>
 
-                <input type="submit" name="Abschickennnn" value="Abschicken" class="submit-button">
+                <button type="submit" class="login-button">Registrieren</button>
             </form>
         </div>
     </div>
