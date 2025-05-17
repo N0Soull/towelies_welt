@@ -20,56 +20,111 @@ body {
     box-sizing: border-box;
 }
 
+
 header {
-    background-color: var(--color-dark);
-    color: var(--color-light);
-    padding: 1rem;
-}
-
-header h1 {
-    text-align: center;
-    margin: 0 0 1rem 0;
-}
-
-header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+
+header nav {
     display: flex;
-    gap: 1rem;
-
+    align-items: center;
+    width: 100%;
 }
+
+
 .nav-left {
-    margin-right: auto;
+    display: flex;
+    gap: 1.5rem;
+    
 }
 
-.nav-right {
-    margin-left: auto;
-}
-
-header nav ul li a {
-    color: var(--color-light);
+.nav-left li a {
+    color: #2f855a;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    font-size: 1rem;
     transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
-    color: var(--color-link-hover);
+.nav-left li a:hover {
+    color: #00e913e7;
+}
+
+
+.logo {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 200px;
+}
+
+
+.nav-right {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-right li a {
+    display: flex;
+    align-items: center;
+    color: #2f855a;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-right li a:hover {
+    color: #00e913e7;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin: 0;
 }
 
 .hero {
-    text-align: center;
-    padding: 2rem;
-    background-color: var(--color-light-gray);
+ font-size:1.5vw;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 220px;
+  color: #375240;
+  text-shadow: 0 10px 7px rgba(0,0,0,0.4),0 -10px 1px #fff;
+  letter-spacing: -2px;
+  background-size: cover;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
 }
+
+
+.about{
+    /* make this about  big and use maybe a good font  */
+    font-size: 8vw;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 220px;
+    color: #80b661;
+}
+
+
+
 
 .hero .btn {
     display: inline-block;
@@ -82,7 +137,7 @@ header nav ul li a:hover {
 
 footer {
     text-align: center;
-    padding: 1rem;
+   
     background-color: var(--color-dark);
     color: var(--color-light);
     position: absolute;
@@ -214,15 +269,7 @@ footer {
 }
 
 /* Login and Popup Styles */
-#loginBtn {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: var(--color-dark);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
+
 
 .popup {
     display: none;
