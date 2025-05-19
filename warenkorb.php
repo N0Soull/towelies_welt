@@ -4,21 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Warenkorb - Towelies Welt</title>
-    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Warenkorb</h1>
-        <nav>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="produkt.php">Products</a></li>
-                <li><a href="warenkorb.php" class="active">Cart</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
+
+    <?php include 'header.php'; ?>
+
+
+    <main class="container-custom">
         <section id="cart-items">
             <h2>Dein Warenkorb</h2>
             <div class="cart-list">
@@ -32,10 +26,6 @@
         </section>
     </main>
     <br></br>
-    <footer>
-        <p>&copy; 2025 Towelies Welt. Alle Rechte vorbehalten.</p>
-    </footer>
-
     <script src="scripts/cart.js"></script>
 </body>
 </html>

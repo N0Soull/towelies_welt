@@ -39,6 +39,8 @@ header nav {
 
 
 .nav-left {
+    width: 100%;
+    flex: 11 auto;
     display: flex;
     gap: 1.5rem;
     
@@ -57,7 +59,7 @@ header nav {
 
 
 .logo {
-    flex-grow: 1;
+
     text-align: center;
 }
 
@@ -67,8 +69,11 @@ header nav {
 
 
 .nav-right {
+    flex: 1 auto;
+    width: 100%;
     display: flex;
     gap: 1.5rem;
+    justify-content: flex-end; 
 }
 
 .nav-right li a {
@@ -115,13 +120,32 @@ li {
 
 
 .about{
-    /* make this about  big and use maybe a good font  */
+    font-family: "Copperplate", ;
     font-size: 8vw;
     white-space: nowrap;
     overflow: hidden;
-    line-height: 220px;
     color: #80b661;
+    margin-top: 200px;
+    margin-bottom: 0;
+    margin-left: 40px;
 }
+
+.about-content{
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    margin-top: 0;
+    margin-left: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding : 30px;
+}
+
+
+
+
 
 
 
@@ -145,6 +169,9 @@ footer {
     width: 100%;
 }
 
+
+
+
 /* Product Grid */
 .container {
     max-width: 1200px;
@@ -152,6 +179,45 @@ footer {
     padding: 20px;
 }
 
+.container-custom {
+
+    height: 500px;
+    width: 30%;
+    margin: 0 auto;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+
+}
+
+#cart-items {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-summary {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px var(--color-shadow);
+}
+
+.cart-summary button {
+    
+    padding: 12px;
+    background-color: var(--color-dark);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 5px;
+            
+}
 .page-title {
     text-align: center;
     margin-bottom: 2rem;
@@ -455,3 +521,5 @@ input[type="checkbox"] {
         font-size: 12px;
     }
 }
+
+
