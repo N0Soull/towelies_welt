@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Towelies Welt</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <?php include 'header.php'; ?>
+
+    <main style="position: relative; width: 100%; height: 100%; background-color: ; " >
+        <div id="Willkommen">
+            <h1>Willkommen bei Towelies Welt</h1>
+        </div>
+
+        <h1 class="about">Über uns</h1>
+        <div class="about-content Willkomen-box">
+            <p>Willkommen bei Towelis Welt, deinem Spezialisten für hochwertige Cannabisprodukte!
+                Wir bieten dir eine sorgfältig ausgewählte Vielfalt an Cannabis-Samen, Ölen und mehr. Qualität und
+                Nachhaltigkeit stehen bei uns an erster Stelle, damit du immer das Beste aus der Natur genießen kannst.
+                Erlebe die Welt von Cannabis neu – vertrauensvoll, legal und mit Herz.</p>
+        </div>
+
     
-   <main>
-    <div id="Willkommen">
-        <h1>Willkommen bei Towelies Welt</h1>
-    </div>
-
-    <h1 class="about">Über uns</h1>
-    <div class="about-content Willkomen-box">
-        <p>Willkommen bei Towelis Welt,  deinem Spezialisten für hochwertige Cannabisprodukte!
-            Wir bieten dir eine sorgfältig ausgewählte Vielfalt an Cannabis-Samen, Ölen und mehr. Qualität und Nachhaltigkeit stehen bei uns an erster Stelle, damit du immer das Beste aus der Natur genießen kannst.
-            Erlebe die Welt von Cannabis neu – vertrauensvoll, legal und mit Herz.</p>
-    </div>
-</main>
-
+            <div style="position: absolute; height: 100%; width: 100%; top: 0; z-index: -1; background-color: #;" >
+                hello
+            </div>
 
     
+       
+    </main>
+
+
+
 
     <!-- Login Popup -->
     <div id="loginPopup" class="popup">
@@ -84,15 +95,18 @@
                 </div>
 
                 <div class="checkbox-group">
-                    <label><input type="checkbox" required> Ich habe gelesen und akzeptiere <a href="#">Datenschutzrichtlinie</a></label>
-                    <label><input type="checkbox" required> Ich habe gelesen und akzeptiere <a href="#">Geschäftsbedingungen</a></label>
+                    <label><input type="checkbox" required> Ich habe gelesen und akzeptiere <a
+                            href="#">Datenschutzrichtlinie</a></label>
+                    <label><input type="checkbox" required> Ich habe gelesen und akzeptiere <a
+                            href="#">Geschäftsbedingungen</a></label>
                 </div>
 
                 <button type="submit" class="login-button">Registrieren</button>
             </form>
         </div>
     </div>
-    
+
     <script src="scripts/btn.js"></script>
 </body>
+
 </html>

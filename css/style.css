@@ -159,11 +159,11 @@ li {
 
 .about{
     font-family: "Copperplate", ;
-    font-size: 8vw;
+    font-size: 8rem;
     white-space: nowrap;
     overflow: hidden;
     color: #80b661;
-    margin-top: 200px;
+    margin-top: 50px;
     margin-bottom: 0;
     margin-left: 40px;
 }
