@@ -18,7 +18,7 @@
             </li>
             <li>
                 <a href="#" id="loginBtn">
-                    <img src="Bilder/Profile.png" alt="Login Icon" width="22" height="22">      
+                    <img src="Bilder/Profile.png" alt="Login Icon" width="22" height="22">
                 </a>
             </li>
         </ul>
