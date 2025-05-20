@@ -34,9 +34,6 @@ include 'php/datenbank.php';
                             <div class="product-stock <?php echo $row['GesamtBestand'] > 0 ? 'in-stock' : 'out-of-stock'; ?>">
                             <?php echo $row['GesamtBestand'] > 10 ? 'Niederig Auf lager'   : 'Nicht verfügbar'; ?>
                             </div>
-
-                            <?php if ($)
-
                             <?php if ($row['GesamtBestand'] > 0) : ?>
                                 <button class="add-to-cart" onclick="addToCart(<?php echo $row['Produkt_ID']; ?>)">
                                     In den Warenkorb

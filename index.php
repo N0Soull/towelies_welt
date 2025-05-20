@@ -9,16 +9,18 @@
 <body>
     <?php include 'header.php'; ?>
     
-    <main>
-    
-        <h1 class="about">Über uns</h1>
-        <div class="about-content">
-            <p>Willkommen bei Towelis Welt,  deinem Spezialisten für hochwertige Cannabisprodukte!
-                Wir bieten dir eine sorgfältig ausgewählte Vielfalt an Cannabis-Samen, Ölen und mehr. Qualität und Nachhaltigkeit stehen bei uns an erster Stelle, damit du immer das Beste aus der Natur genießen kannst.
-                Erlebe die Welt von Cannabis neu – vertrauensvoll, legal und mit Herz.</p> </div>
+   <main>
+    <div id="Willkommen">
+        <h1>Willkommen bei Towelies Welt</h1>
+    </div>
 
-
-    </main>
+    <h1 class="about">Über uns</h1>
+    <div class="about-content Willkomen-box">
+        <p>Willkommen bei Towelis Welt,  deinem Spezialisten für hochwertige Cannabisprodukte!
+            Wir bieten dir eine sorgfältig ausgewählte Vielfalt an Cannabis-Samen, Ölen und mehr. Qualität und Nachhaltigkeit stehen bei uns an erster Stelle, damit du immer das Beste aus der Natur genießen kannst.
+            Erlebe die Welt von Cannabis neu – vertrauensvoll, legal und mit Herz.</p>
+    </div>
+</main>
 
 
     
@@ -90,10 +92,6 @@
             </form>
         </div>
     </div>
-
-    <footer>
-        <p>&copy; 2025 Towelies Welt. Alle Rechte vorbehalten.</p>
-    </footer>
     
     <script src="scripts/btn.js"></script>
 </body>

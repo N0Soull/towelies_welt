@@ -30,6 +30,44 @@ header {
     
 }
 
+/* Modernes Willkommen ohne Box */
+#Willkommen h1 {
+    font-size: 2.7rem;
+    font-weight: 800;
+    color: #388e3c;
+    text-align: center;
+    margin: 36px 0 18px 0;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-shadow: 0 2px 8px rgba(56, 142, 60, 0.08);
+}
+
+
+.Willkomen-box {
+    background: linear-gradient(90deg, #a8e063 0%, #56ab2f 100%);
+    color: #fff;
+    padding: 32px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 40px ;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(56, 171, 47, 0.15);
+    text-align: center;
+    max-width: 600px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.Willkomen-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 32px rgba(56, 171, 47, 0.25);
+}
+
+.Willkomen-box h1,
+.Willkomen-box p {
+    margin: 0;
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
 
 header nav {
     display: flex;
@@ -130,18 +168,6 @@ li {
     margin-left: 40px;
 }
 
-.about-content{
-    font-size: 1.5vw;
-    display: flex;
-    justify-content: center;
-    width: 35%;
-    margin-top: 0;
-    margin-left: 50px;
-    font-family: 'Courier New', Courier, monospace;
-    border-radius: 25px;
-    border: 2px solid #73AD21;
-    padding : 30px;
-}
 
 
 
