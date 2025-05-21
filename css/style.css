@@ -27,7 +27,7 @@ header {
     align-items: center;
     padding: 10px 20px;
     background-color: #f9f9f9;
-    
+
 }
 
 /* Modernes Willkommen ohne Box */
@@ -49,7 +49,7 @@ header {
     padding: 32px 0;
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: 40px ;
+    margin-left: 40px;
     border-radius: 18px;
     box-shadow: 0 4px 18px rgba(56, 171, 47, 0.15);
     text-align: center;
@@ -69,6 +69,55 @@ header {
     font-family: 'Segoe UI', Arial, sans-serif;
 }
 
+
+
+#Warum-uns h1 {
+    margin-left: 1000px;
+    position: absolute;
+    font-size: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #80b661;
+
+}
+
+.warum-uns-box {
+    background: linear-gradient(90deg, #a8e063 0%, #56ab2f 100%);
+    color: #fff;
+    padding: 32px 0;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-top: 120px;
+    position: relative;
+    float: right;
+    margin-right: 40px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    margin-left: 40px;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(56, 171, 47, 0.15);
+    text-align: center;
+    max-width: 600px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.warum-uns-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 32px rgba(56, 171, 47, 0.25);
+
+}
+
+.warum-uns-box h1,
+.warum-uns-box p {
+    margin: 0;
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+
+
+
 header nav {
     display: flex;
     align-items: center;
@@ -81,7 +130,7 @@ header nav {
     flex: 11 auto;
     display: flex;
     gap: 1.5rem;
-    
+
 }
 
 .nav-left li a {
@@ -111,7 +160,7 @@ header nav {
     width: 100%;
     display: flex;
     gap: 1.5rem;
-    justify-content: flex-end; 
+    justify-content: flex-end;
 }
 
 .nav-right li a {
@@ -140,26 +189,26 @@ li {
 }
 
 .hero {
- font-size:1.5vw;
-  white-space: nowrap;
-  overflow: hidden;
-  line-height: 220px;
-  color: #375240;
-  text-shadow: 0 10px 7px rgba(0,0,0,0.4),0 -10px 1px #fff;
-  letter-spacing: -2px;
-  background-size: cover;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  
+    font-size: 1.5vw;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 220px;
+    color: #375240;
+    text-shadow: 0 10px 7px rgba(0, 0, 0, 0.4), 0 -10px 1px #fff;
+    letter-spacing: -2px;
+    background-size: cover;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
 }
 
 
-.about{
+.about {
     font-family: "Copperplate", ;
-    font-size: 8rem;
+    font-size: 80px;
     white-space: nowrap;
     overflow: hidden;
     color: #80b661;
@@ -187,7 +236,7 @@ li {
 
 footer {
     text-align: center;
-   
+
     background-color: var(--color-dark);
     color: var(--color-light);
     position: absolute;
@@ -232,7 +281,7 @@ footer {
 }
 
 .cart-summary button {
-    
+
     padding: 12px;
     background-color: var(--color-dark);
     color: white;
@@ -242,8 +291,9 @@ footer {
     font-weight: 500;
     cursor: pointer;
     margin-top: 5px;
-            
+
 }
+
 .page-title {
     text-align: center;
     margin-bottom: 2rem;
@@ -381,7 +431,7 @@ footer {
     width: 90%;
     padding: 30px;
     margin: 20px auto;
-    box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
     position: relative;
 }
 
@@ -434,7 +484,7 @@ form {
     margin-bottom: 15px;
 }
 
-.form-row > div {
+.form-row>div {
     flex: 1;
 }
 
@@ -547,5 +597,3 @@ input[type="checkbox"] {
         font-size: 12px;
     }
 }
-
-

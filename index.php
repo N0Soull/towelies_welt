@@ -11,7 +11,7 @@
 <body>
     <?php include 'header.php'; ?>
 
-    <main style="position: relative; width: 100%; height: 100%; background-color: ; " >
+    <main style="position: relative; width: 100%; height: 50%; background-color: ; " >
         <div id="Willkommen">
             <h1>Willkommen bei Towelies Welt</h1>
         </div>
@@ -25,8 +25,21 @@
         </div>
 
     
-            <div style="position: absolute; height: 100%; width: 100%; top: 0; z-index: -1; background-color: #;" >
+            <div style="position: absolute; height: 100 %; width: 100%; top: 0; z-index: -1; background-color: ; " >
                 hello
+            </div>
+
+        <div id="Warum-uns"> 
+            <h1>
+                Warum uns? 
+            </h1>
+            <div class="warum-uns-box">
+                <p>Wir stehen für Qualität, Vertrauen und Nachhaltigkeit. 
+                Bei Towelies Welt erhältst du ausschließlich sorgfältig ausgewählte Produkte, 
+                die höchsten Standards entsprechen. Unser engagiertes Team berät dich kompetent und persönlich, 
+                damit du genau das findest, was zu dir passt. Wir legen Wert auf Transparenz, 
+                faire Preise und einen verantwortungsvollen Umgang mit der Natur – 
+                für ein sicheres und angenehmes Einkaufserlebnis.</p>
             </div>
 
     
