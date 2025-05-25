@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body style="background-color: #EDE9DD;">
     <?php include 'header.php'; ?>
 
     <main style="position: relative; width: 100%; height: 50%; background-color: ; " >
         <div id="Willkommen">
-            <h1>Willkommen bei Towelies Welt</h1>
+            <h1 style="color = #3A5A40">Willkommen bei Towelies Welt</h1>
         </div>
 
         <h1 class="about">Über uns</h1>
@@ -25,7 +25,7 @@
         </div>
 
     
-            <div style="position: absolute; height: 100 %; width: 100%; top: 0; z-index: -1; background-color: ; " >
+            <div style="position: absolute; height: 100 %; width: 100%; top: 0; z-index: -1; background-color:; " >
                 hello
             </div>
 
@@ -41,6 +41,20 @@
                 faire Preise und einen verantwortungsvollen Umgang mit der Natur – 
                 für ein sicheres und angenehmes Einkaufserlebnis.</p>
             </div>
+
+            <h2 class="Best-of-all">Best off all</h2>
+            <div class="product-grid">
+                <div class="product-item-1">
+                    <img src="images/cannabis-seeds.jpg" alt="Cannabis Seeds" class="best-of-all-img">
+                    <h3>white widow</h3>
+                    <p></p>
+                </div>
+                  
+            
+        
+        
+                   
+                   
 
     
        

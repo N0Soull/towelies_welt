@@ -1,4 +1,4 @@
-<header>
+<header style="background-color: #EDE9DD;">
     <nav>
          
         <ul class="nav-left">
