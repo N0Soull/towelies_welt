@@ -11,47 +11,84 @@
 <body style="background-color: #EDE9DD;">
     <?php include 'header.php'; ?>
 
-    <main style="position: relative; width: 100%; height: 50%; background-color: ; " >
+    <?php
+    // 1. Connect to the database
+    $conn = new mysqli("localhost", "root", "", "towelies_welt");
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    // 2. Query for 3 products
+    $sql = "SELECT name, Preis FROM produkt LIMIT 3";
+    $result = $conn->query($sql);
+    ?>
+
+    <main style="position: relative; width: 100%; height: 50%; margin: auto " >
         <div id="Willkommen">
             <h1 style="color = #3A5A40">Willkommen bei Towelies Welt</h1>
         </div>
-
-        <h1 class="about">Über uns</h1>
-        <div class="about-content Willkomen-box">
-            <p>Willkommen bei Towelis Welt, deinem Spezialisten für hochwertige Cannabisprodukte!
-                Wir bieten dir eine sorgfältig ausgewählte Vielfalt an Cannabis-Samen, Ölen und mehr. Qualität und
-                Nachhaltigkeit stehen bei uns an erster Stelle, damit du immer das Beste aus der Natur genießen kannst.
-                Erlebe die Welt von Cannabis neu – vertrauensvoll, legal und mit Herz.</p>
-        </div>
-
-    
-            <div style="position: absolute; height: 100 %; width: 100%; top: 0; z-index: -1; background-color:; " >
-                hello
+        <div style="width: 80% ; margin: auto; position: relative">
+            <h1 class="about">Über uns</h1>
+            <div class="about-content Willkomen-box">
+                <p>Willkommen bei Towelis Welt, deinem Spezialisten für hochwertige Cannabisprodukte!
+                    Wir bieten dir eine sorgfältig ausgewählte Vielfalt an Cannabis-Samen, Ölen und mehr. Qualität und
+                    Nachhaltigkeit stehen bei uns an erster Stelle, damit du immer das Beste aus der Natur genießen kannst.
+                    Erlebe die Welt von Cannabis neu - vertrauensvoll, legal und mit Herz.</p>
             </div>
 
-        <div id="Warum-uns"> 
-            <h1>
-                Warum uns? 
-            </h1>
-            <div class="warum-uns-box">
-                <p>Wir stehen für Qualität, Vertrauen und Nachhaltigkeit. 
-                Bei Towelies Welt erhältst du ausschließlich sorgfältig ausgewählte Produkte, 
-                die höchsten Standards entsprechen. Unser engagiertes Team berät dich kompetent und persönlich, 
-                damit du genau das findest, was zu dir passt. Wir legen Wert auf Transparenz, 
-                faire Preise und einen verantwortungsvollen Umgang mit der Natur – 
-                für ein sicheres und angenehmes Einkaufserlebnis.</p>
-            </div>
-
-            <h2 class="Best-of-all">Best off all</h2>
-            <div class="product-grid">
-                <div class="product-item-1">
-                    <img src="images/cannabis-seeds.jpg" alt="Cannabis Seeds" class="best-of-all-img">
-                    <h3>white widow</h3>
-                    <p></p>
+        
+                <div style="position: absolute; height: 100 %; width: 100%; top: 0; z-index: -1; background-color:; " >
+                    hello
                 </div>
+                
+            <div id="Warum-uns"> 
+                <h1>
+                    Warum uns? 
+                </h1>
+                <div class="warum-uns-box">
+                    <p>Wir stehen für Qualität, Vertrauen und Nachhaltigkeit. 
+                    Bei Towelies Welt erhältst du ausschließlich sorgfältig ausgewählte Produkte, 
+                    die höchsten Standards entsprechen. Unser engagiertes Team berät dich kompetent und persönlich, 
+                    damit du genau das findest, was zu dir passt. Wir legen Wert auf Transparenz, 
+                    faire Preise und einen verantwortungsvollen Umgang mit der Natur – 
+                    für ein sicheres und angenehmes Einkaufserlebnis.</p>
+                </div>
+            
+                <h2 class="Best-of-all">Best off all</h2>
+                <div class="product-grid">
+                    <?php
+                    // 3. Output products dynamically
+                    if ($result && $result->num_rows > 0) {
+                        while($row = $result->fetch_assoc()) {
+                            ?>
+                            < class="product-item-1">
+                                <p><?php echo htmlspecialchars($row ['Preis']) ?></p>
+                                <h3><?php echo htmlspecialchars($row['name']) ?></h3>
+                                <img src=" ">
+                                
+                            </div>
+                            <?php
+                        }
+                    } else {
+                        echo "<p>Keine Produkte gefunden.</p>";
+                    }
+                    
+                  
+
+                    ?>
+                </div>    
+            </div>    
+
+        </div>
                   
             
-        
+        <script>
+            const product = {
+                name: "Pruple haze",
+                price: "Preis",
+                image: "purplehaze.png"
+            }
+        </script>
         
                    
                    
@@ -59,6 +96,10 @@
     
        
     </main>
+    <?php
+    // 4. Close the connection
+    $conn->close();
+    ?>
 
 
 
