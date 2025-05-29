@@ -61,20 +61,19 @@
                     if ($result && $result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {
                             ?>
-                            < class="product-item-1">
-                                <p><?php echo htmlspecialchars($row ['Preis']) ?></p>
-                                <h3><?php echo htmlspecialchars($row['name']) ?></h3>
-                                <img src=" ">
-                                
+                            <div class="product-item-1">
+                                <div class="product-image"><img src="Bilder/<?php echo strtolower(str_replace(' ', '-', htmlspecialchars($row['name']))) . '.jpg'; ?>"
+                                alt="<?php echo htmlspecialchars($row['name']); ?>">
                             </div>
+                                <p><?php echo htmlspecialchars($row['Preis']) ?></p> 
+                                <h3><?php echo htmlspecialchars($row['name']); ?></h3>
+                               
+                            </div>  
                             <?php
                         }
                     } else {
                         echo "<p>Keine Produkte gefunden.</p>";
                     }
-                    
-                  
-
                     ?>
                 </div>    
             </div>    
@@ -82,13 +81,7 @@
         </div>
                   
             
-        <script>
-            const product = {
-                name: "Pruple haze",
-                price: "Preis",
-                image: "purplehaze.png"
-            }
-        </script>
+        
         
                    
                    

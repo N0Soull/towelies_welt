@@ -24,7 +24,7 @@ include 'php/datenbank.php';
                     ?>
                     <div class="product-card">
                         <div class="product-image">
-                            <img src="bilder/<?php echo strtolower(str_replace(' ', '-', htmlspecialchars($row['Name']))) . '.jpg'; ?>"
+                            <img src="Bilder/<?php echo strtolower(str_replace(' ', '-', htmlspecialchars($row['Name']))) . '.jpg'; ?>"
                                 alt="<?php echo htmlspecialchars($row['Name']); ?>">
                         </div>
                         <div class="product-content">
