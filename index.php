@@ -54,22 +54,24 @@
                     für ein sicheres und angenehmes Einkaufserlebnis.</p>
                 </div>
             
-                <h2 class="Best-of-all">Best off all</h2>
-                <div class="product-grid">
+                <h2 class="Best-of-all">BEST ALL TIME</h2>
+                <div class="product-grid-index">
                     <?php
                     // 3. Output products dynamically
                     if ($result && $result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {
                             ?>
-                            <div class="product-item-1">
+                                <div class="product-item-1">
                                 <div class="product-image"><img src="Bilder/<?php echo strtolower(str_replace(' ', '-', htmlspecialchars($row['name']))) . '.jpg'; ?>"
                                 alt="<?php echo htmlspecialchars($row['name']); ?>">
-                            </div>
+                                </div>
                                 <p><?php echo htmlspecialchars($row['Preis']) ?></p> 
                                 <h3><?php echo htmlspecialchars($row['name']); ?></h3>
-                               
+                                
                             </div>  
                             <?php
+                        
+                            
                         }
                     } else {
                         echo "<p>Keine Produkte gefunden.</p>";
