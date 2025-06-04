@@ -61,15 +61,17 @@
                     if ($result && $result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) {
                             ?>
-                                <div class="product-item-1">
-                                <div class="product-image"><img src="Bilder/<?php echo strtolower(str_replace(' ', '-', htmlspecialchars($row['name']))) . '.jpg'; ?>"
-                                alt="<?php echo htmlspecialchars($row['name']); ?>">
-                                </div>
-                                <p><?php echo htmlspecialchars($row['Preis']) ?></p> 
-                                <h3><?php echo htmlspecialchars($row['name']); ?></h3>
-                                
-                            </div>  
-                            <?php
+                              <a href="produkt.php?name=<?php echo urlencode($row['name']); ?>" class="product-link" style="text-decoration:none; color:inherit;">
+                                    <div class="product-item-1">
+                                        <div class="product-image">
+                                            <img src="Bilder/<?php echo strtolower(str_replace(' ', '-', htmlspecialchars($row['name']))) . '.jpg'; ?>"
+                                                alt="<?php echo htmlspecialchars($row['name']); ?>">
+                                        </div>
+                                        <p><?php echo htmlspecialchars($row['Preis']) ?></p> 
+                                        <h3><?php echo htmlspecialchars($row['name']); ?></h3>
+                                    </div>
+                                </a> 
+                                <?php
                         
                             
                         }
