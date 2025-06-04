@@ -35,9 +35,11 @@ include 'php/datenbank.php';
                             <?php echo $row['GesamtBestand'] > 10 ? 'Niederig Auf lager'   : 'Nicht verfügbar'; ?>
                             </div>
                             <?php if ($row['GesamtBestand'] > 0) : ?>
-                                <button class="add-to-cart" onclick="addToCart(<?php echo $row['Produkt_ID']; ?>)">
-                                    In den Warenkorb
-                                </button>
+                                <form action="php/warenkorb.php" method="post" class="add-to-cart-form">
+                                    <input type="hidden" name="action" value="add">
+                                    <input type="hidden" name="product_id" value="<?php echo $row['Produkt_ID']; ?>">
+                                    <button type="submit" class="add-to-cart">In den Warenkorb</button>
+                                </form>
                             <?php endif; ?>
                         </div>
                     </div>
