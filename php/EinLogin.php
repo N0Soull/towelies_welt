@@ -8,9 +8,9 @@
 	
 	$vorn=$_POST["vorname"];
 	$nachn=$_POST["nachname"];
-	$email=$_POST["email"];
+	//$email=$_POST["email"];
 	$gb=$_POST["geburtstag"];
-	$handyn=$_POST["handynummer"];
+	//$handyn=$_POST["handynummer"];
 	$pass=$_POST["regPass"];
 	
 	

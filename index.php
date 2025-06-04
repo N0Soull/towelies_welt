@@ -159,6 +159,19 @@
                     </div>
                 </div>
 
+                    <label for="regPass">Passwort</label>
+                <div class="password-wrapper">
+                  <input type="text" id="registerPassword" name="regPass" placeholder="Passwort einrichten" required autocomplete="new-password">
+                  <button type="button" id="toggleRegisterPassword" style="position:absolute; right:10px; top:50%; transform:translateY(-50%); background:none; border:none; cursor:pointer;">
+                    👁️
+                  </button>
+                </div>
+                
+                <p class="password-info">
+                Das Passwort sollte mindestens: 8 Zeichen lang sein, 1 Großbuchstabe, 1 Kleinbuchstabe und 1 Sonderzeichen enthalten.
+                </p>
+
+
                 <div class="checkbox-group">
                     <label><input type="checkbox" required> Ich habe gelesen und akzeptiere <a
                             href="#">Datenschutzrichtlinie</a></label>
@@ -172,6 +185,22 @@
     </div>
 
     <script src="scripts/btn.js"></script>
+    <script>
+    // Toggle password visibility for registration
+    document.addEventListener('DOMContentLoaded', function() {
+      var pwInput = document.getElementById('registerPassword');
+      var toggleBtn = document.getElementById('toggleRegisterPassword');
+      if (pwInput && toggleBtn) {
+        toggleBtn.addEventListener('click', function() {
+          if (pwInput.type === 'password') {
+            pwInput.type = 'text';
+          } else {
+            pwInput.type = 'password';
+          }
+        });
+      }
+    });
+    </script>
 </body>
 
 </html>
