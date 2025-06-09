@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body style="background-color: #EDE9DD;">
+<body class="bg-color">
     <?php include 'header.php'; ?>
 
     <?php
@@ -25,7 +25,7 @@
 
     <main style="position: relative; width: 100%; height: 50%; margin: auto " >
         <div id="Willkommen">
-            <h1 style="color = #3A5A40">Willkommen bei Towelies Welt</h1>
+            <h1 style="color: #a4d6b2">Willkommen bei Towelies Welt</h1>
         </div>
         <div style="width: 80% ; margin: auto; position: relative">
             <h1 class="about">Über uns</h1>

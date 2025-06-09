@@ -9,7 +9,7 @@ include 'php/datenbank.php';
     <title>Produkte - Towelies Welt</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="bg-color">
     <?php include 'header.php';  ?>
     <div class="container">
         <h1 class="page-title">Unsere Produkte</h1>
@@ -21,10 +21,18 @@ include 'php/datenbank.php';
 
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
+                    $imagePath = "Bilder/" . strtolower(str_replace(' ', '-', htmlspecialchars($row['Name']))) . '.jpg';
                     ?>
-                    <div class="product-card">
+                    <div class="product-card" 
+                         data-product-id="<?php echo $row['Produkt_ID']; ?>"
+                         data-product-name="<?php echo htmlspecialchars($row['Name']); ?>"
+                         data-product-type="<?php echo htmlspecialchars($row['Typ']); ?>"
+                         data-product-price="<?php echo $row['Preis']; ?>"
+                         data-product-stock="<?php echo $row['GesamtBestand']; ?>"
+                         data-product-image="<?php echo $imagePath; ?>">
+                        
                         <div class="product-image">
-                            <img src="Bilder/<?php echo strtolower(str_replace(' ', '-', htmlspecialchars($row['Name']))) . '.jpg'; ?>"
+                            <img src="<?php echo $imagePath; ?>"
                                 alt="<?php echo htmlspecialchars($row['Name']); ?>">
                         </div>
                         <div class="product-content">
@@ -32,15 +40,8 @@ include 'php/datenbank.php';
                             <span class="product-type"><?php echo htmlspecialchars($row['Typ']); ?></span>
                             <div class="product-price">€<?php echo number_format($row['Preis'], 2, ',', '.'); ?></div>
                             <div class="product-stock <?php echo $row['GesamtBestand'] > 0 ? 'in-stock' : 'out-of-stock'; ?>">
-                            <?php echo $row['GesamtBestand'] > 10 ? 'Niederig Auf lager'   : 'Nicht verfügbar'; ?>
+                            <?php echo $row['GesamtBestand'] > 10 ? 'Niederig Auf lager'  : 'Nicht verfügbar'; ?>
                             </div>
-                            <?php if ($row['GesamtBestand'] > 0) : ?>
-                                <form action="php/warenkorb.php" method="post" class="add-to-cart-form">
-                                    <input type="hidden" name="action" value="add">
-                                    <input type="hidden" name="product_id" value="<?php echo $row['Produkt_ID']; ?>">
-                                    <button type="submit" class="add-to-cart">In den Warenkorb</button>
-                                </form>
-                            <?php endif; ?>
                         </div>
                     </div>
                     <?php
@@ -51,6 +52,40 @@ include 'php/datenbank.php';
             ?>
         </div>
     </div>
+
+    <!-- Product Popup Modal -->
+    <div id="productPopup" class="popup-overlay">
+        <div class="popup-content">
+            <span class="popup-close">&times;</span>
+            <div class="popup-body">
+                <div class="popup-image">
+                    <img id="popupImage" src="" alt="">
+                </div>
+                <div class="popup-info">
+                    <h2 id="popupTitle"></h2>
+                    <span id="popupType" class="popup-type"></span>
+                    <div id="popupPrice" class="popup-price"></div>
+                    <div id="popupStock" class="popup-stock"></div>
+                    
+                    <!-- Placeholder for product description -->
+                    <div class="popup-description">
+                        <h3>Produktbeschreibung</h3>
+                        <p id="popupDescription">
+                            <!-- Your product description will go here -->
+                        </p>
+                    </div>
+                    
+                    <form id="popupCartForm" action="php/warenkorb.php" method="post" class="popup-cart-form">
+                        <input type="hidden" name="action" value="add">
+                        <input type="hidden" id="popupProductId" name="product_id" value="">
+                        <button type="submit" id="popupAddToCart" class="popup-add-to-cart">In den Warenkorb</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="scripts/skripte.js"></script>
+    <script src="scripts/popup.js"></script>
 </body>
 </html>
