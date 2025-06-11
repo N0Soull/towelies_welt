@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             case '3':
                 description = "Mit 80% Sativa und 20% Indica ist Amnesia Haze Eine sorte dir ein Lächeln auf das Gesicht Zaubert.In der Medizin wird Amnesia Haze auch für die Behandlung von Depressionen oder posttraumatischen Belastungsstörungen benutzt.";
-            
+                            
             break;
 
                 

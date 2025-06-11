@@ -86,6 +86,5 @@ include 'php/datenbank.php';
     </div>
 
     <script src="scripts/skripte.js"></script>
-    <script src="scripts/popup.js"></script>
 </body>
 </html>
