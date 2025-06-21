@@ -29,7 +29,7 @@
         </div>
 
         <div style="width: 80%; margin: auto; position: relative">
-            <h1 class="about">Über uns</h1>
+            <h1 class="about">HOW ARE WE</h1>
             <div class="about-content Willkomen-box">
                 <p>Willkommen bei Towelis Welt, deinem Spezialisten für hochwertige Cannabisprodukte!
                     Wir bieten dir eine sorgfältig ausgewählte Vielfalt an Cannabis-Samen, Ölen und mehr. Qualität und
@@ -45,7 +45,7 @@
             <div style="position: absolute; height: 100%; width: 100%; top: 0; z-index: -1;"></div>
 
             <div id="Warum-uns">
-                <h1>Warum uns?</h1>
+                <h1>WHY US</h1>
                 <div class="warum-uns-box">
                     <p>Wir stehen für Qualität, Vertrauen und Nachhaltigkeit.
                         Bei Towelies Welt erhältst du ausschließlich sorgfältig ausgewählte Produkte,
@@ -55,7 +55,7 @@
                         für ein sicheres und angenehmes Einkaufserlebnis.</p>
                 </div>
 
-                <h2 class="Best-of-all">BEST ALL TIME</h2>
+                <h2 class="Best-of-all">BEST SELLER</h2>
                 <div class="product-grid-index">
                     <?php
                     // 3. Output products dynamically
@@ -68,7 +68,6 @@
                                         <img src="Bilder/<?php echo strtolower(str_replace(' ', '-', htmlspecialchars($row['name']))) . '.jpg'; ?>"
                                             alt="<?php echo htmlspecialchars($row['name']); ?>">
                                     </div>
-                                    <p><?php echo htmlspecialchars($row['Preis']) ?></p>
                                     <h3><?php echo htmlspecialchars($row['name']); ?></h3>
                                 </div>
                             </a>

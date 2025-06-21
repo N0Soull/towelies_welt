@@ -71,12 +71,13 @@ header {
 }
 
 #Warum-uns h1 {
+    
     margin-bottom: 0px;
     text-align: right;
     font-size: 80px;
     white-space: nowrap;
     color: #3A5A40;
-    text-shadow: 0 10px 7px rgba(0, 0, 0, 0.4), 0 -10px 1px #EDE9DD;
+    text-shadow: 0 10px 7px rgba(0, 0, 0, 0.4), 0 -5px 1px #EDE9DD;
 }
 
 .warum-uns-box {

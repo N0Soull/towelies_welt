@@ -7,7 +7,7 @@
         </ul>
 
         <div class="logo" style="text-align: center;">
-            <img src="Bilder/logoo.png" alt="Towelies Welt Logo" width="200">
+            <img src="Bilder/logo.png" alt="Towelies Welt Logo" width="200">
         </div>
 
         <ul class="nav-right">
