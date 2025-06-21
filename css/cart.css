@@ -188,12 +188,14 @@
 }
 
 .checkout-btn {
-    background: #2c5282;
+    background: #1f691f;
 }
 
 .checkout-btn:hover {
-    background: #2b6cb0;
+    background: #4ae75f;
 }
+
+
 
 @media (max-width: 700px) {
     .cart-item {
