@@ -103,12 +103,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
             case '3':
                 description = "Mit 80% Sativa und 20% Indica ist Amnesia Haze Eine sorte dir ein Lächeln auf das Gesicht Zaubert.In der Medizin wird Amnesia Haze auch für die Behandlung von Depressionen oder posttraumatischen Belastungsstörungen benutzt.";
-                            
-            break;
-
+            
+            case '4':
+                description = "Mit 60% Sativa und 40% Indica ist Ak47 perfekt kreative Aktivitäten und entspannte gespräche.";
                 
+            case '5':
+                description = "Mit 85% Indica und 15% Sativa ist Critical Kush eine sorte die entspannend und beruhigend wirkt. Sie wird auch gegen chronische schmerzen verwendet.";
+            case '6':
+                description ="Gorilla Glue 4 oder auch GG4 ist mit 63% Sativa und 37% Indica eine Sativa dominierte sorte. Es wirkt stark euphorisierend und gleichzeitig beruhigend(körperlich und psychisch). Mit einemTHC gehalt von bis zu 32% ist es eine der Stärksten sorten.";
+            case '7':
+                description = "Granddaddy Purple auch bekannt als Snoop Doggs lieblings Cannabis ist mit 70% Indica und 30% Sativa ein Hybrid. Die wirkung ist beruhigend und entspannend für den Körper, aber mit einenerhebenden, glückseligen Rausch.";
+            case '8':
+                description = "Mit 55% Sativa und 45% Indica ist OG Kush eine sorte mit einer tiefen Körperlichen Entspannung. Außerdem wird es in der Medizin gegen Stress, Schmerzen und Schlaflosigkeit eingesetzt.";
+            case '9':
+                description = "Mit 60% Indica und 40% Sativa ist Wedding Cake eine sorte die oft als entspannend und beruhigend beschrieben wird."
         }
         
         popupDescription.textContent = description;
     }
 });
+    /*    
+                
+                
+
+                case '7':
+                    description = "Granddaddy Purple auch bekannt als Snoop Doggs lieblings Cannabis ist mit 70% Indica und 30% Sativa ein Hybrid. Die wirkung ist beruhigend und entspannend für den Körper, aber mit einenerhebenden, glückseligen Rausch.";
+
+                break;*/

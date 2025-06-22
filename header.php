@@ -7,7 +7,9 @@
         </ul>
 
         <div class="logo" style="text-align: center;">
-            <img src="Bilder/logo.png" alt="Towelies Welt Logo" width="200">
+            <a href="index.php">
+                <img src="Bilder/logo.png" alt="Towelies Welt Logo" width="200" style="cursor: pointer;">
+            </a>
         </div>
 
         <ul class="nav-right">
