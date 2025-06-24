@@ -1,5 +1,9 @@
 # Towelies Welt
 
+this website was a group project for college
+
+---
+
 weed-webshop seite Towelies Welt
 
 ## Projektstruktur
