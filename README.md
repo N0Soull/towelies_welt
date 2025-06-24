@@ -13,17 +13,13 @@ towelies_welt/
 ├── css/
 │   └── style.css                <!-- Styles für die gesamte Website -->
 ├── js/
+│   ├── cart.php                 <!-- für warenkorb verhalten und ordnen -->
+│   ├── btn.php                  <!-- für buttons und etc. -->
 │   └── skripte.js               <!-- JavaScript für Animationen und Updates -->
 ├── php/
-│   ├── Produkt_kategorie        <!-- für unterkategorisierung von produkten -->
 │   ├── datenbank.php            <!-- Verbindung zur MySQL-Datenbank -->
-│   ├── produktliste.php         <!-- Liste der Produkte anzeigen -->
-│   ├── produktdetails.php       <!-- Einzelproduktdetails anzeigen -->
 │   ├── warenkorb.php            <!-- Warenkorb-Logik -->
-│   ├── bestellung.php           <!-- Bestellung abschließen -->
-│   ├── mitarbeiter.php          <!-- Mitarbeiter verwalten -->
-│   ├── lagerbestand.php         <!-- Lagerbestand verwalten -->
-│   ├── transaktionen.php        <!-- Transaktionshistorie anzeigen -->
+│   ├── EinLogin.php             <!-- verbindung zwischen datenbank für registrierung und login prozess -->
 ├── bilder/
 │   └── beispielprodukt.jpg      <!-- Beispielbilder für Produkte -->
 ├── index.php                    <!-- Startseite des Shops -->
@@ -31,10 +27,10 @@ towelies_welt/
 ├── warenkorb.php                <!-- Warenkorbseite -->
 ├── bestellabschluss.php         <!-- Bestellabschlussseite -->
 ├── login.php                    <!-- Login-Seite für Kunden -->
+├── footer.php                   <!-- footer -->
+├── header.php                   <!-- header -->
+├── impressum.php                <!-- allgemeines impressum für die webseite -->
 ├── registrieren.php             <!-- Registrierung neuer Kunden -->
-├── mitarbeiter.php              <!-- Mitarbeiter-Dashboard -->
-├── lager.php                    <!-- Lagerbestandsverwaltung -->
-├── transaktionen.php            <!-- Transaktionsverlaufseite -->
 ```
 
 ## Beschreibung der Dateien
