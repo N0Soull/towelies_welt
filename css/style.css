@@ -1010,3 +1010,13 @@ input[type="checkbox"] {
         justify-content: center;
     }
 }
+
+/* Header Icon Styling */
+.nav-right a img, .nav-left a img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+    transition: filter 0.3s ease;
+}
+
+.nav-right a img:hover, .nav-left a img:hover {
+    filter: invert(80%) sepia(20%) saturate(200%) hue-rotate(200deg) brightness(90%) contrast(120%);
+}
