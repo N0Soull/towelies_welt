@@ -58,7 +58,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         // Set stock status
-        popupStock.textContent = productStock > 10 ? 'Niederig Auf lager' : 'Nicht verfügbar';
+        let stockText = '';
+        if (productStock <= 0) {
+            stockText = 'Nicht verfügbar';
+        } else if (productStock <= 10) {
+            stockText = 'Niederig auf Lager';
+        } else if (productStock <= 99) {
+            stockText = 'Genug auf Lager';
+        } else {
+            stockText = 'FULL';
+        }
+        popupStock.textContent = stockText;
         popupStock.className = 'popup-stock ' + (productStock > 0 ? 'in-stock' : 'out-of-stock');
         
         // Set product ID for the form
@@ -122,11 +132,3 @@ document.addEventListener('DOMContentLoaded', function() {
         popupDescription.textContent = description;
     }
 });
-    /*    
-                
-                
-
-                case '7':
-                    description = "Granddaddy Purple auch bekannt als Snoop Doggs lieblings Cannabis ist mit 70% Indica und 30% Sativa ein Hybrid. Die wirkung ist beruhigend und entspannend für den Körper, aber mit einenerhebenden, glückseligen Rausch.";
-
-                break;*/
