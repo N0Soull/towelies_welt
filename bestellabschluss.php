@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <li><?php echo htmlspecialchars($item['name']); ?> x <?php echo $item['quantity']; ?> - <?php echo number_format($item['price'] * $item['quantity'], 2, ',', '.'); ?> €</li>
                 <?php endforeach; ?>
             </ul>
-            <strong>Gesamtbetrag: <?php 
+            <strong>Gesamtbetrag: <?php
                 $total = array_sum(array_map(function($item) { return $item['price'] * $item['quantity']; }, $_SESSION['cart']));
                 echo number_format($total, 2, ',', '.');
             ?> €</strong>

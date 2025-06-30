@@ -23,7 +23,7 @@ include 'php/datenbank.php';
                 while ($row = $result->fetch_assoc()) {
                     $imagePath = "Bilder/" . strtolower(str_replace(' ', '-', htmlspecialchars($row['Name']))) . '.jpg';
                     ?>
-                    <div class="product-card" 
+                    <div class="product-card"
                          data-product-id="<?php echo $row['Produkt_ID']; ?>"
                          data-product-name="<?php echo htmlspecialchars($row['Name']); ?>"
                          data-product-type="<?php echo htmlspecialchars($row['Typ']); ?>"

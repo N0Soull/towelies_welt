@@ -24,8 +24,8 @@ include 'php/datenbank.php';
                         $imagePath = 'Bilder/' . strtolower(str_replace(' ', '-', $item['name'])) . '.jpg';
                         ?>
                         <div class="cart-item">
-                            <img src="<?php echo htmlspecialchars($imagePath); ?>" 
-                                 alt="<?php echo htmlspecialchars($item['name']); ?>" 
+                            <img src="<?php echo htmlspecialchars($imagePath); ?>"
+                                 alt="<?php echo htmlspecialchars($item['name']); ?>"
                                  class="product-image">
                             <div class="product-details">
                                 <p class="item-name"><?php echo htmlspecialchars($item['name']); ?></p>
@@ -40,7 +40,7 @@ include 'php/datenbank.php';
                                 <form action="php/warenkorb.php" method="post" class="quantity-form">
                                     <input type="hidden" name="action" value="update">
                                     <input type="hidden" name="product_id" value="<?php echo $productId; ?>">
-                                    <input type="number" name="quantity" value="<?php echo $item['quantity']; ?>" 
+                                    <input type="number" name="quantity" value="<?php echo $item['quantity']; ?>"
                                            min="1" max="99" class="quantity-input">
                                     <button type="submit" class="update-btn">Aktualisieren</button>
                                 </form>
@@ -59,9 +59,9 @@ include 'php/datenbank.php';
                 ?>
             </div>
             <div class="cart-summary">
-                <h3>Gesamtbetrag: 
+                <h3>Gesamtbetrag:
                     <span id="total-price">
-                        <?php 
+                        <?php
                         $total = isset($_SESSION['cart']) ? array_sum(array_map(function($item) {
                             return $item['price'] * $item['quantity'];
                         }, $_SESSION['cart'])) : 0;
